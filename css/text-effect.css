@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Lato:ital,wght@1,900&family=Roboto+Mono:wght@500&family=Ubuntu&display=swap');
+@keyframes tipsy {
+    0% {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  
+  .bg{
+    text-align: center;
+    padding: 10px;
+    height: 100vh; 
+    background-size: cover;
+    box-sizing: border-box;
+    filter: blur(3px);
+}
+
+.bg-text{
+    font-family: 'Lato', sans-serif;
+    color: rgb(74, 70, 70);
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+  
+}
+.bg-text:before,
+.bg-text:after {
+    content: '';
+    padding: 35px 35px;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 12px solid black;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+  }
+  
+  .bg-text:before {
+    border-color: grey grey rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .bg-text:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) grey grey;
+    box-shadow: 8px 8px 8px rgba(46, 46, 49, .8);
+    z-index: 1;
+  }

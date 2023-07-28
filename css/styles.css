@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    background-color: rgb(231, 231, 231);
+    
+}
+
+.bg{
+    text-align: center;
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+    box-sizing: border-box;
+    filter: blur(3px);
+}
+
+.custom-section{
+    padding: 25px;
+ }
+
+footer{
+    background-color: black;
+    padding: 20px 0;
+    margin-top: 40px;   
+}
+
+footer p{
+    color: white;
+    margin-top: 40px;
+    text-align: right;
+}
+
+.home{
+    background-image: url(/img/computadora.jpg);
+}
